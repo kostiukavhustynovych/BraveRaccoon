@@ -1,0 +1,16 @@
+<!--
+ - Created by 1 on 12.05.2021.
+ -->
+
+<!-- My First Web Component -->
+<template>
+    <lightning-card title="ContactInformation" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <template for:each={contacts} for:item="contact">
+                <div key={contact.Id}>
+                    {contact.Name}, {contact.Title}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

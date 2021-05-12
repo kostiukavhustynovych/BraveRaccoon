@@ -1,0 +1,17 @@
+<!--
+ - Created by 1 on 09.05.2021.
+ -->
+
+<aura:component description="helloMessageInteractive">
+    <aura:attribute name="message" type="String"/>
+    <p> Message of the day: {!v.message}</p>
+    <div >
+
+        <lightning:button name="aaa"
+                          label="You look nice today."
+                          aura:id="button1"
+                          onclick="{!c.handleClick2}"/>
+        <lightning:button  label="Today is going to be a great day!"
+                          onclick="{!c.handleClick2}"/>
+    </div>
+</aura:component>
